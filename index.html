@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Lab Queue</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Virtual Lab Queue</h1>
+        <button class="logout-btn" onclick="logout()">Logout</button>
+    </header>
+
+    <div class="queue-container">
+        <div class="controls">
+            <input type="text" id="enqueueValue" placeholder="Enter value...">
+            <button onclick="enqueue()">Enqueue</button>
+            <button onclick="dequeue()">Dequeue</button>
+            <button onclick="peek()">Front</button>
+            <button onclick="rear()">Rear</button>
+            <button onclick="queueSize()">Size</button>
+            <button onclick="isEmpty()">Is Empty?</button>
+            <button onclick="clearQueue()">Clear</button>
+            <button onclick="searchQueue()">Search</button>
+            <button onclick="reverseQueue()">Reverse</button>
+        </div>
+        <div class="queue-display" id="queueDisplay"></div>
+        <div class="output" id="output"></div>
+    </div>
+
+    <footer>
+        &copy; 2025 Virtual Lab Queue
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+/* General page styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5dc; /* beige background */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #2e8b57; /* solid green header */
+    color: white;
+    padding: 35px 25px;
+    text-align: center;
+    position: relative;
+    border-bottom: 4px solid #006400;
+}
+
+.logout-btn {
+    position: absolute;
+    right: 25px;
+    top: 35px;
+    background-color: #ff4500; /* bright orange */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.logout-btn:hover {
+    background-color: #cc3700;
+}
+
+/* Queue container */
+.queue-container {
+    width: 90%;
+    max-width: 950px;
+    margin: 40px auto;
+    background-color: #fff8dc; 
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+}
+
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.controls input {
+    width: 220px;
+    padding: 12px;
+    border: 2px solid #8b4513;
+    border-radius: 6px;
+}
+
+.controls button {
+    padding: 12px 20px;
+    background-color: #4682b4;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.controls button:hover {
+    background-color: #315f7d;
+}
+
+/* Queue visualization */
+.queue-display {
+    display: flex;
+    gap: 20px;
+    min-height: 100px;
+    padding: 20px;
+    background-color: #fdf5e6;
+    border-radius: 12px;
+    flex-wrap: wrap;
+}
+
+.queue-element {
+    padding: 14px 25px;
+    background-color: #ff6347;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    animation: fadeIn 0.4s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Output box */
+.output {
+    margin-top: 25px;
+    padding: 15px;
+    background-color: #fff0f5;
+    border-left: 5px solid #4682b4;
+    font-size: 1.05rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+    background-color: #2e8b57;
+    color: white;
+}
+
+/* Login page */
+.login-box {
+    background-color: #fff8dc;
+    padding: 35px;
+    border-radius: 12px;
+    width: 360px;
+    margin: 100px auto;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.login-box h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #2e8b57;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #8b4513;
+    border-radius: 6px;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4682b4;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.login-box button:hover {
+    background-color: #315f7d;
+}
+
+.login-box p {
+    text-align: center;
+    color: red;
+    margin-top: 15px;
+    font-weight: bold;
+}
